@@ -1,0 +1,22 @@
+{
+  "hosting": {
+    "public": "dist/concesionario-autos/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "target": {
+    "hosting": {
+      "dev": "concesionario-autos-dev",
+      "prod": "concesionario-autos"
+    }
+  }
+}

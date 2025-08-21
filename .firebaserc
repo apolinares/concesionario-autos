@@ -1,0 +1,18 @@
+{
+  "projects": {
+    "default": "despliegue-final-alf"
+  },
+  "targets": {
+    "despliegue-final-alf": {
+      "hosting": {
+        "dev": [
+          "concesionario-autos-dev"
+        ],
+        "prod": [
+          "concesionario-autos-prod"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
