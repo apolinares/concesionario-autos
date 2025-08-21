@@ -1,9 +1,19 @@
 <h1>Nuestro Catalogo</h1>
-<img src="/img/banner1.jpg" alt="Automoviles">
+<img 
+    src="/img/banner1.webp" 
+    alt="Automoviles"
+    loading="lazy"
+    width="400"
+    height="350"
+>
 <section class="autos">
     @for (car of autos; track car.id) {
         <article class="auto">
-            <img [src]="car.imagen" [alt]="car.nombre">
+            <img 
+                [src]="car.imagen" 
+                [alt]="car.nombre"
+                loading="lazy"
+            >
             <h3>{{car.nombre}}</h3>
             <p>{{car.descripcion}}</p>
             <strong>{{car.precio}}</strong>
